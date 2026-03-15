@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bohdan Bulakevych</title>
+    <!-- fonts -->
+    <link rel="stylesheet" href="../static/styles.css"> 
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@200;400;700&display=swap" rel="stylesheet">
+    <!-- favicon -->
+    <link rel="icon" type="image/png" href="../static/images/favicon/favicon-96x96.png" sizes="96x96" />
+    <link rel="icon" type="image/svg+xml" href="../static/images/favicon/favicon.svg" />
+    <link rel="shortcut icon" href="../static/images/favicon/favicon.ico" />
+    <link rel="apple-touch-icon" sizes="180x180" href="../static/images/favicon/apple-touch-icon.png" />
+    <meta name="apple-mobile-web-app-title" content="Bohdan Portfolio" />
+</head>
+<body>
+    <header>
+        <div class="logo">
+                <img src="../static/images/logo.png" alt="Logo">
+        </div>
+        <nav class="dropdown">
+            <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+        <div class="menu_icon">
+            <img src="../static/images/menu_icon.png" alt="menu_icon">
+        </div>
+    </header>
+    <section class="home">
+        <div class="main_block">
+            <div>
+                <h1>Bohdan Bulakevych:</h1>
+                <p>
+                    Dedicated Software Engineer with a focus on backend and web development, proficient in Python. I specialize in designing and implementing tools that address real-world challenges and streamline daily tasks. With a strong interest in backend technologies, I continuously enhance my expertise in modern web frameworks. 
+                    <br><br>
+                    I possess a keen ability to learn swiftly and tackle complex problems, driving my passion for contributing to impactful projects. My goal is to develop reliable software while advancing my skills and making a meaningful contribution to the team.
+                </p>
+            </div>
+            <img src="../static/images/my_photo.jpg" alt="my_photo">
+        </div>
+    </section>
+    <section id="about" class="about">
+        <div class="section_header">
+            <h1>About Me:</h1>
+        </div>
+        <div class="about_block">
+            <div>
+                <img src="../static/images/python_logo.webp" alt="python_logo">
+                <p>
+                    <strong>Education:</strong>
+                    <br>
+                    Bachelor of Science in Computer Science  
+                    Lutsk National Technical University  
+                    <br><br>
+                    <strong>Professional Summary:</strong> 
+                    <br>
+                    Passionate software engineer with a strong foundation in programming, developed through extensive experience in game development using Unity and C#. My interest in technology ignited at an early age, and I have since honed my skills primarily in Python and web technologies. I have a knack for solving logical challenges, structuring code efficiently, and creating tools that streamline complex processes.
+                    <br><br>
+                    <strong>Current Role:</strong>
+                    <br>
+                    In my current position as a Sales and Support Agent in the IT industry, I gain valuable insights into customer interactions with technology products. This experience has reinforced my desire to transition fully into a software development role, where I aim to contribute to larger projects and advance my expertise as a backend engineer.
+                </p>
+            </div>
+        </div>
+    </section>
+    <section id="projects" class="projects">
+        <div class="section_header">
+            <h1>My Projects:</h1>
+        </div>
+        <div class="projects_block">
+            <div class="block">
+                <div class="croping">
+                    <img src="../static/images/project_images/CLI_project.png" alt="first_project">
+                </div>
+                    CLI Task Manager – CS50P Final Project
+                <p>
+                    A command-line task management application built with Python. 
+                    The program allows users to create, edit, and track tasks directly from the terminal.
+
+                    The project focuses on clean program structure, user interaction through CLI menus, 
+                    and simple data storage using JSON.
+                </p>
+            </div>
+            <div class="block">
+                <div class="croping">
+                    <img src="../static/images/project_images/portfolio.png" alt="second_project">
+                </div>
+                
+                    Personal Portfolio Website
+                <p>
+                    A minimal personal portfolio website created using HTML and CSS. 
+                    The goal of the project was to design a clean interface to present my work, 
+                    projects, and technical skills.
+
+                    This project demonstrates my understanding of responsive layout, 
+                    CSS styling, and modern website structure.
+                </p>
+            </div>
+            <div class="block">
+                <div class="croping">
+                    <img src="../static/images/project_images/professor.png" alt="third_project">
+                </div>
+                    Math Quiz CLI App
+                <p>
+                    A Python command-line application that generates random math problems based on 
+                    difficulty level. 
+                    
+                    The program tracks user attempts, handles invalid input, and 
+                    calculates a final score after a series of questions.
+                </p>
+            </div>
+        </div>
+    </section>
+    <section class="contact">
+        <h1>Contact Me:</h1>
+        <form method="POST" action="/send" enctype="multipart/form-data">
+            <div>
+                <label for="name">Name:</label>
+                <input type="text" id="name" name="name" placeholder="First & Last Name" required>
+            </div>
+            <div>
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" placeholder="your_email@email.com" required>
+            </div>
+            <div>
+                <label for="message">Message:</label>
+                <textarea id="message" rows="5" name="message" placeholder="Your Message" required></textarea>
+            </div>
+            <input type="submit" value="Contact Me">
+        </form>
+    </section>
+    <footer id="contact">
+        <div>&copy; 2026 Bohdan</div>
+        <div><a href="https://github.com/BohdanStarter" target="_blank">GitHub</a></div>
+        <div><a href="https://www.linkedin.com/in/bohdan-bulakevych-5510b416b/" target="_blank">LinkedIn</a></div>
+    </footer>
+</body>
+</html>
