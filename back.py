@@ -1,4 +1,4 @@
-from flask import Flask, render_template, request, redirect
+from flask import Flask, render_template, request, redirect, flash
 import requests
 import os
 from dotenv import load_dotenv
@@ -28,7 +28,7 @@ def send():
             "text": f"Name: {name}\nEmail: {email}\nMessage:\n{message}"
         }
     )
-
+    
     return redirect("/")
 
 @app.errorhandler(404)
