@@ -2,3 +2,6 @@ flask
 requests
 dotenv
 gunicorn
+email_validator
+flask_limiter
+flask_talisman
