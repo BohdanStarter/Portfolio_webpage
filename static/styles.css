@@ -199,7 +199,7 @@ nav ul{
 .projects_block .block .croping{
     width: 100%;
     padding-top: 5%;
-    padding-bottom: 5%;
+    /* padding-bottom: 5%; */
     place-self: center;
 
     /* Crop image */
@@ -207,6 +207,12 @@ nav ul{
     /* height: 500px;
     width: 500px;
     overflow: hidden; */
+}
+
+.projects_block .block span{
+    padding-left: 5%;
+    padding-right: 5%;
+    place-self: center;
 }
 
 .croping img{
