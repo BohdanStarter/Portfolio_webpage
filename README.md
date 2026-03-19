@@ -163,7 +163,7 @@ If the email service is unavailable, the application returns an appropriate erro
 ```
 project/
 │
-├── app.py
+├── back.py
 │
 ├── templates/
 │   ├── index.html
@@ -235,7 +235,7 @@ SECRET_KEY=your_secret_key
 ## 5. Run the application
 
 ```
-python app.py
+python back.py
 ```
 
 The server will start locally at:
