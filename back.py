@@ -38,8 +38,11 @@ def send():
     except EmailNotValidError:
         return "Invalid email", 400
 
-    if len(message) > 2000:
+    if len(message.strip()) > 2500:
         return "Message too long", 400
+    
+    if len(message.strip()) <= 0:
+        return "Message cannot be empty", 400
 
     try:
         response = requests.post(
